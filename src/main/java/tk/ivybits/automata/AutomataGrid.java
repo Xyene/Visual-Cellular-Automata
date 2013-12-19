@@ -155,7 +155,8 @@ public class AutomataGrid extends JPanel {
                         + alive(x + 1, y + 1)
                         + alive(x + 1, y - 1)
                         + alive(x - 1, y + 1)
-                        + alive(x - 1, y - 1));
+                        + alive(x - 1, y - 1),
+                        cell != null ? cell.generation : 0);
                 if (alive) {
                     if (cell == null) {
                         cells[x][y] = new Cell(leading);

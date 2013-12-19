@@ -47,8 +47,8 @@ public enum Automata implements IAutomata {
     }
 
     @Override
-    public boolean willLive(boolean alive, int neighbours) {
-        return automata.willLive(alive, neighbours);
+    public boolean willLive(boolean alive, int neighbours, int tick) {
+        return automata.willLive(alive, neighbours, tick);
     }
 
     public String display() {

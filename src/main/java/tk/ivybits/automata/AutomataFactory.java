@@ -2,15 +2,12 @@ package tk.ivybits.automata;
 
 import java.util.Arrays;
 
-/**
- * @version 1.0
- * @since 1.0
- */
 public class AutomataFactory {
     public static IAutomata create(String rule) {
         String[] tokens = rule.split("/");
         String born = tokens[0];
         String survive = tokens[1];
+        final int life = tokens.length == 3 ? Integer.parseInt(tokens[2]) : -1;
 
         final int[] birth = new int[born.length() - 1];
         final int[] survival = new int[survive.length() - 1];
@@ -18,8 +15,11 @@ public class AutomataFactory {
         copy(survive, 1, survival);
         return new IAutomata() {
             @Override
-            public boolean willLive(boolean alive, int neighbours) {
+            public boolean willLive(boolean alive, int neighbours, int tick) {
                 if (alive) {
+                    if (life != -1 && tick > life) {
+                        return false;
+                    }
                     if (Arrays.binarySearch(survival, neighbours) > -1) {
                         return true;
                     }
