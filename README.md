@@ -1,4 +1,4 @@
-Visual-Cellular-Automata
+Visual Cellular Automata
 ========================
 
 Visualization for cellular automata.
