@@ -3,11 +3,14 @@ package tk.ivybits.automata;
 import javax.swing.*;
 
 public class Main {
-    public static void main(String... argv) {
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ReflectiveOperationException | UnsupportedLookAndFeelException e) {
-        }
-        new CellFrame().setVisible(true);
+    public static void main(String... argv) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
+        System.setProperty("sun.java2d.opengl", "true");
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new CellFrame().setVisible(true);
+            }
+        });
     }
 }
