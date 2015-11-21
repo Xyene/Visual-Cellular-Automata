@@ -4,7 +4,6 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String... argv) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
-        System.setProperty("sun.java2d.opengl", "true");
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         SwingUtilities.invokeLater(new Runnable() {
             @Override
