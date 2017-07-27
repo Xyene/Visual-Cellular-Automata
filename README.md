@@ -5,4 +5,4 @@ Visualization for cellular automata.
 
 ![Cellular Automata](https://tbrindus.ca/assets/Visual-Cellular-Automata.png)
 
-Get it [here](https://ci.tbrindus.ca/job/Visual%20Cellular%20Automata/).
+Get it [here](https://github.com/Xyene/Visual-Cellular-Automata/releases).
