@@ -3,6 +3,6 @@ Visual Cellular Automata
 
 Visualization for cellular automata.
 
-![Cellular Automata](https://dl.dropboxusercontent.com/u/67341745/ivybits/VisualCellularAutomata.png)
+![Cellular Automata](https://tbrindus.ca/assets/Visual-Cellular-Automata.png)
 
-Get it [here](http://ci.ivybits.tk/job/Visual%20Cellular%20Automata/).
+Get it [here](https://ci.tbrindus.ca/job/Visual%20Cellular%20Automata/).
